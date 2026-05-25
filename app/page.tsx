@@ -354,15 +354,15 @@ export default function Home() {
               <span style={{ color: "#a78bfa" }}>mít jistotu</span> 💜
             </h2>
             <p style={{ fontSize: "0.95rem", color: "rgba(255,255,255,0.62)", lineHeight: 1.85, marginBottom: 28 }}>
-              AIBaimy je primárně určeno <strong style={{ color: "#fff" }}>rodičům dětí 7–11 let</strong> v AIBgin školách —
-              vzdělávacích institucích, které využívají AI asistenty s ověřenou AIBSN identitou a ochranou AIBguard.
+              AIBgin platforma byla od začátku navržena jako bezpečné AI pro děti. Díky rostoucí poptávce rodičů jsme vyvinuli AIBaimy — rodičovskou aplikaci přímo odvozenou z AIBgin platformy. AIBaimy je primárně určena{" "}
+              <strong style={{ color: "#fff" }}>rodičům dětí ve věku 7–11 let</strong>, kteří chtějí mít přehled o tom, jak jejich dítě pracuje s AI — bezpečně, transparentně a bez starostí.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
               {[
-                { icon: "👧👦", text: "Rodiče dětí ve věku 7–11 let" },
-                { icon: "🏫", text: "Školy a vzdělávací instituce využívající AIBgin platformu" },
-                { icon: "👩‍🏫", text: "Pedagogové hledající nástroj pro spolupráci s rodiči" },
-                { icon: "🏠", text: "Domácí vzdělávání (homeschooling) — bez institucionálního zázemí" },
+                { icon: "👨‍👩‍👧", text: "Rodiče dětí ve věku 7–11 let" },
+                { icon: "🧒", text: "Děti které používají AIBgin platformu" },
+                { icon: "🏠", text: "Domácí vzdělávání (homeschooling)" },
+                { icon: "🔐", text: "Každý rodič který chce mít jistotu bezpečnosti svého dítěte v AI světě" },
               ].map((item) => (
                 <div key={item.text} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
                   <span style={{ fontSize: "1.2rem", flexShrink: 0, marginTop: 1 }}>{item.icon}</span>
