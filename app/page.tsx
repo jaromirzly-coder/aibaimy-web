@@ -188,7 +188,7 @@ export default function Home() {
       <nav className="nav-blur" style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100 }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 28px", height: 68, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <span style={{ fontSize: "1.6rem" }}>🛡️</span>
+            <Image src="/images/logo.png" alt="AIBaimy logo" width={36} height={36} style={{ objectFit: "contain" }} />
             <span style={{ fontSize: "1.45rem", fontWeight: 900, color: "#00e5ff", letterSpacing: "-0.02em" }}>AIBaimy</span>
             <span className="tag-pill hide-mob" style={{ background: "rgba(52,211,153,0.12)", color: "#34d399", border: "1px solid rgba(52,211,153,0.3)", marginLeft: 6, fontSize: "0.65rem" }}>
               EU AI Act Ready
