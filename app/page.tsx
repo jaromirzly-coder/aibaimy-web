@@ -336,6 +336,47 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── PRO KOHO ── */}
+      <section id="prokoho" style={{ padding: "72px 28px", background: "rgba(167,139,250,0.03)", borderTop: "1px solid rgba(167,139,250,0.08)", borderBottom: "1px solid rgba(167,139,250,0.08)" }}>
+        <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 64, alignItems: "center" }} className="grid-2">
+          <div style={{ position: "relative", height: 380, borderRadius: 20, overflow: "hidden", border: "1px solid rgba(167,139,250,0.2)" }}>
+            <Image
+              src="/images/parent-mobile.png"
+              alt="Rodič sledující pokrok dítěte v AI vzdělávání na mobilním zařízení"
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+          <div>
+            <p className="section-label" style={{ marginBottom: 12, color: "#a78bfa", opacity: 0.9 }}>Pro koho je AIBaimy</p>
+            <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", fontWeight: 900, marginBottom: 20, letterSpacing: "-0.02em" }}>
+              Pro rodiče, kteří chtějí{" "}
+              <span style={{ color: "#a78bfa" }}>mít jistotu</span> 💜
+            </h2>
+            <p style={{ fontSize: "0.95rem", color: "rgba(255,255,255,0.62)", lineHeight: 1.85, marginBottom: 28 }}>
+              AIBaimy je primárně určeno <strong style={{ color: "#fff" }}>rodičům dětí 7–11 let</strong> v AIBgin školách —
+              vzdělávacích institucích, které využívají AI asistenty s ověřenou AIBSN identitou a ochranou AIBguard.
+            </p>
+            <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+              {[
+                { icon: "👧👦", text: "Rodiče dětí ve věku 7–11 let" },
+                { icon: "🏫", text: "Školy a vzdělávací instituce využívající AIBgin platformu" },
+                { icon: "👩‍🏫", text: "Pedagogové hledající nástroj pro spolupráci s rodiči" },
+                { icon: "🏠", text: "Domácí vzdělávání (homeschooling) — bez institucionálního zázemí" },
+              ].map((item) => (
+                <div key={item.text} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
+                  <span style={{ fontSize: "1.2rem", flexShrink: 0, marginTop: 1 }}>{item.icon}</span>
+                  <span style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.7)", lineHeight: 1.6 }}>{item.text}</span>
+                </div>
+              ))}
+            </div>
+            <div style={{ marginTop: 32 }}>
+              <a href="#cta" className="btn-primary">Vyzkoušet zdarma 14 dní</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── JAK TO FUNGUJE ── */}
       <section style={{ padding: "72px 28px", background: "rgba(255,255,255,0.015)", borderTop: "1px solid rgba(255,255,255,0.06)", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto" }}>
