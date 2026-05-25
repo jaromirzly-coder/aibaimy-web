@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 /* ── Data ───────────────────────────────────────────────── */
 
 const LAYERS = [
@@ -96,7 +98,8 @@ const STEPS = [
     desc: "Vytvořte rodičovský účet e-mailem za 2 minuty. Bez kreditní karty. Plný přístup ke všem funkcím ihned.",
     color: "#00e5ff",
     bg: "rgba(0,229,255,0.12)",
-    placeholder: "Registrační formulář — pouze pro rodiče",
+    image: "/images/step-register.png",
+    alt: "Registrační formulář AIBaimy — pouze pro rodiče",
   },
   {
     num: "02",
@@ -105,7 +108,8 @@ const STEPS = [
     desc: "Systém vygeneruje unikátní QR kód. Dítě ho naskenuje a okamžitě přistupuje k AIBgin platformě — bez vlastní registrace, bez e-mailu, bez hesla.",
     color: "#a78bfa",
     bg: "rgba(167,139,250,0.12)",
-    placeholder: "Vygenerování QR kódu — žádná registrace dítěte",
+    image: "/images/step-qr.png",
+    alt: "QR kód pro přístup dítěte bez registrace",
   },
   {
     num: "03",
@@ -114,7 +118,8 @@ const STEPS = [
     desc: "Všech 5 vrstev AIBguard je aktivních od prvního dotazu. Dashboard rodiče se naplní daty v reálném čase. Jste v obraze.",
     color: "#34d399",
     bg: "rgba(52,211,153,0.12)",
-    placeholder: "Live dashboard — real-time data a notifikace",
+    image: "/images/step-live.png",
+    alt: "Live dashboard s real-time daty a notifikacemi",
   },
 ];
 
@@ -243,9 +248,14 @@ export default function Home() {
 
           {/* Right */}
           <div className="float-anim">
-            <div className="placeholder-img pulse-glow" style={{ height: 400, border: "2px solid rgba(0,229,255,0.18)", borderRadius: 20 }}>
-              Dashboard AIBaimy — live přehled aktivit dítěte,<br />
-              bezpečnostní notifikace, 5 vrstev status
+            <div className="pulse-glow" style={{ position: "relative", height: 400, borderRadius: 20, overflow: "hidden", border: "2px solid rgba(0,229,255,0.18)" }}>
+              <Image
+                src="/images/hero-dashboard.png"
+                alt="AIBaimy Dashboard — live přehled aktivit dítěte, bezpečnostní notifikace, 5 vrstev AIBguard"
+                fill
+                style={{ objectFit: "cover" }}
+                priority
+              />
             </div>
           </div>
         </div>
@@ -336,8 +346,13 @@ export default function Home() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 32 }} className="grid-3">
             {STEPS.map((s) => (
               <div key={s.num} style={{ display: "flex", flexDirection: "column", gap: 22 }}>
-                <div className="placeholder-img" style={{ height: 200, borderRadius: 16, border: `1px solid ${s.color}20` }}>
-                  {s.placeholder}
+                <div style={{ position: "relative", height: 200, borderRadius: 16, overflow: "hidden", border: `1px solid ${s.color}25` }}>
+                  <Image
+                    src={s.image}
+                    alt={s.alt}
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
                 </div>
                 <div style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
                   <div className="step-bubble" style={{ background: s.bg, color: s.color, border: `2px solid ${s.color}` }}>
