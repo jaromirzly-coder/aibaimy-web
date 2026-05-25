@@ -160,7 +160,7 @@ const FAQ = [
     a: "Výhradně v EU — v datovém centru Supabase v Frankfurtu (eu-central-1). Data nikdy neopustí EU. Jsou šifrována AES-256 per-tenant klíčem. Po ukončení lekce nezůstává na zařízení dítěte žádný identifikátor — nulová digitální stopa.",
   },
   {
-    q: "Co přesně znamená „nulová digitální stopa dítěte"?",
+    q: "Co přesně znamená nulová digitální stopa dítěte?",
     a: "Dítě nemá účet — nemá e-mail, jméno ani heslo v systému. Jeho identita je reprezentována pouze pseudonymním tokenem vázaným na rodičovský účet. Tento token nelze použít k identifikaci dítěte bez přístupu k rodičovskému účtu. Po smazání rodičovského účtu jsou veškerá data dítěte trvale anonymizována do 30 dní.",
   },
 ];
