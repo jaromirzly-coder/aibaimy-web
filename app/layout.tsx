@@ -98,13 +98,13 @@ export default function RootLayout({
         {children}
         <Script
           strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID_AIMY"
+          src="https://www.googletagmanager.com/gtag/js?id=G-JF6YEWCWZV"
         />
         <Script id="ga4-aimy-config" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'GA_MEASUREMENT_ID_AIMY');
+          gtag('config', 'G-JF6YEWCWZV');
         `}</Script>
       </body>
     </html>
