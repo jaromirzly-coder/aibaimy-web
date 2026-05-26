@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 /* ── Data ───────────────────────────────────────────────── */
@@ -549,7 +551,12 @@ export default function Home() {
             Žádná kreditní karta. Žádné závazky. Dítě nepotřebuje účet.
           </p>
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap", marginBottom: 24 }}>
-            <a href="mailto:info@aiblab.cz" className="btn-primary" style={{ padding: "16px 48px", fontSize: "0.95rem" }}>
+            <a
+              href="https://app.aibgin.cz/registrace"
+              className="btn-primary"
+              style={{ padding: "16px 48px", fontSize: "0.95rem" }}
+              onClick={() => (window as any).gtag?.("event", "begin_trial", { currency: "CZK", value: 299 })}
+            >
               Vyzkoušet zdarma 14 dní
             </a>
             <a href="mailto:info@aiblab.cz" className="btn-outline">Kontaktovat obchod</a>
@@ -594,9 +601,10 @@ export default function Home() {
               <div style={{ fontSize: "0.65rem", letterSpacing: "0.2em", color: "#a78bfa", opacity: 0.55, marginBottom: 14, textTransform: "uppercase", fontWeight: 800 }}>Ekosystém</div>
               <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                 <a href="https://www.aibguardian.cz" target="_blank" rel="noopener noreferrer" className="footer-link">aibguardian.cz</a>
-                <a href="https://app.aibgin.com" target="_blank" rel="noopener noreferrer" className="footer-link">app.aibgin.com</a>
+                <a href="https://aibgin.cz" target="_blank" rel="noopener noreferrer" className="footer-link">AIBgin platforma</a>
+                <a href="https://app.aibgin.cz" target="_blank" rel="noopener noreferrer" className="footer-link">app.aibgin.cz</a>
                 <a href="https://aiblab.cz" target="_blank" rel="noopener noreferrer" className="footer-link">aiblab.cz</a>
-                <a href="https://aibsn.org" target="_blank" rel="noopener noreferrer" className="footer-link">aibsn.org</a>
+                <a href="https://aibsn.org" target="_blank" rel="noopener noreferrer" className="footer-link">AIBSN Global Registry</a>
               </div>
             </div>
             {/* Právní */}

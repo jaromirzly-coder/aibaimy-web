@@ -1,6 +1,21 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
+
+const jsonLdProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "AIBaimy Rodičovský plán",
+  url: "https://aibaimy.cloud",
+  offers: {
+    "@type": "Offer",
+    price: 299,
+    priceCurrency: "CZK",
+    billingPeriod: "P1M",
+    url: "https://aibaimy.cloud",
+  },
+};
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -73,7 +88,25 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="cs" className={nunito.className}>
-      <body>{children}</body>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdProduct) }}
+        />
+      </head>
+      <body>
+        {children}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID_AIMY"
+        />
+        <Script id="ga4-aimy-config" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'GA_MEASUREMENT_ID_AIMY');
+        `}</Script>
+      </body>
     </html>
   );
 }
