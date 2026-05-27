@@ -244,6 +244,30 @@ body {
 .legal-content ul { padding-left: 20px; margin-bottom: 12px; }
 .legal-content li { font-size: 0.9rem; color: rgba(255,255,255,0.65); line-height: 1.8; }
 
+/* ── Hamburger button ── */
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 6px;
+  border-radius: 8px;
+  line-height: 0;
+  transition: background 0.2s ease;
+}
+.hamburger-btn:hover { background: rgba(255,255,255,0.08); }
+
+/* ── Mobile nav overlay ── */
+.mobile-nav-overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 28px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  background: rgba(10,14,26,0.98);
+}
+
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .grid-2  { grid-template-columns: 1fr !important; }
@@ -252,6 +276,7 @@ body {
   .grid-3  { grid-template-columns: 1fr !important; }
   .grid-4  { grid-template-columns: 1fr 1fr !important; }
   .hide-mob { display: none !important; }
+  .hamburger-btn { display: flex !important; }
 }
 @media (max-width: 520px) {
   .grid-4  { grid-template-columns: 1fr !important; }

@@ -17,6 +17,19 @@ const jsonLdProduct = {
   },
 };
 
+const jsonLdOrganization = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "AIBaimy",
+  url: "https://aibaimy.cloud",
+  description: "AI safety platforma pro děti a rodiče",
+  sameAs: [
+    "https://aiblab.cz",
+    "https://aibgin.cz",
+    "https://aibsn.org",
+  ],
+};
+
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["400", "600", "700", "800", "900"],
@@ -27,7 +40,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://aibaimy.cloud"),
   title: "AIBaimy — Rodičovský přehled bezpečného AI vzdělávání pro děti 7–11 let",
   description:
-    "AIBaimy chrání děti 7–11 let v AI vzdělávání pomocí 5 vrstev ochrany AIBguard. Fail-closed architektura, AES-256 šifrování, krizová detekce 116 111, EU AI Act & GDPR Ready by Design. QR přístup bez registrace dítěte. 14 dní zdarma.",
+    "AIBaimy chrání vaše děti při používání AI chatbotů. Jediná česká platforma pro AI safety dětí doma. Ochrana, ne sledování – bezpečná AI pro celou rodinu.",
   keywords: [
     "bezpečné AI pro děti",
     "rodičovský přehled AI",
@@ -92,6 +105,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdProduct) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganization) }}
         />
       </head>
       <body>

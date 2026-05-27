@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 
 /* ── Data ───────────────────────────────────────────────── */
 
@@ -183,6 +184,8 @@ const LEGAL_LINKS = [
 /* ── Component ──────────────────────────────────────────── */
 
 export default function Home() {
+  const [mobileNav, setMobileNav] = useState(false);
+
   return (
     <div style={{ background: "#0a0e1a", minHeight: "100vh", color: "#fff" }}>
 
@@ -201,8 +204,41 @@ export default function Home() {
               <a key={h} href={h} style={{ color: "rgba(255,255,255,0.6)", fontSize: "0.88rem", fontWeight: 600, textDecoration: "none" }}>{l}</a>
             ))}
           </div>
-          <a href="#cta" className="btn-primary" style={{ padding: "10px 26px", fontSize: "0.78rem" }}>14 dní zdarma</a>
+          <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
+            <a href="https://app.aibgin.cz/registrace" className="btn-primary hide-mob" style={{ padding: "10px 26px", fontSize: "0.78rem" }}>14 dní zdarma</a>
+            <button
+              className="hamburger-btn"
+              onClick={() => setMobileNav(!mobileNav)}
+              aria-label={mobileNav ? "Zavřít menu" : "Otevřít menu"}
+              aria-expanded={mobileNav}
+            >
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {mobileNav ? (
+                  <>
+                    <line x1="3" y1="3" x2="19" y2="19" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/>
+                    <line x1="19" y1="3" x2="3" y2="19" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/>
+                  </>
+                ) : (
+                  <>
+                    <line x1="3" y1="6" x2="19" y2="6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/>
+                    <line x1="3" y1="11" x2="19" y2="11" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/>
+                    <line x1="3" y1="16" x2="19" y2="16" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"/>
+                  </>
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
+        {mobileNav && (
+          <div className="mobile-nav-overlay">
+            {[["Ochrana", "#ochrana"], ["Funkce", "#funkce"], ["Ceník", "#cenik"], ["FAQ", "#faq"]].map(([l, h]) => (
+              <a key={h} href={h} onClick={() => setMobileNav(false)} style={{ color: "rgba(255,255,255,0.85)", fontSize: "1.05rem", fontWeight: 700, textDecoration: "none", padding: "4px 0" }}>{l}</a>
+            ))}
+            <a href="https://app.aibgin.cz/registrace" className="btn-primary" style={{ textAlign: "center", marginTop: 8 }} onClick={() => setMobileNav(false)}>
+              14 dní zdarma
+            </a>
+          </div>
+        )}
       </nav>
 
       {/* ── HERO ── */}
@@ -602,9 +638,9 @@ export default function Home() {
               <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                 <a href="https://www.aibguardian.cz" target="_blank" rel="noopener noreferrer" className="footer-link">aibguardian.cz</a>
                 <a href="https://aibgin.cz" target="_blank" rel="noopener noreferrer" className="footer-link">AIBgin platforma</a>
-                <a href="https://app.aibgin.cz" target="_blank" rel="noopener noreferrer" className="footer-link">app.aibgin.cz</a>
                 <a href="https://aiblab.cz" target="_blank" rel="noopener noreferrer" className="footer-link">aiblab.cz</a>
                 <a href="https://aibsn.org" target="_blank" rel="noopener noreferrer" className="footer-link">AIBSN Global Registry</a>
+                <a href="https://app.aibgin.cz/registrace" className="footer-link" style={{ color: "#00e5ff" }}>Přihlásit se →</a>
               </div>
             </div>
             {/* Právní */}
