@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AIBaimy — 5 vrstev ochrany pro vaše dítě v AI vzdělávání",
     description:
-      "Jediné řešení v ČR s technickou garancí bezpečnosti AI pro děti 7–11 let. Fail-closed architektura, krizová detekce 116 111, AES-256, EU AI Act Ready. 14 dní zdarma.",
+      "Jediné řešení v ČR s technickou garancí bezpečnosti AI pro děti 7–11 let. Fail-closed architektura, krizová detekce 116 111, AES-256, EU AI Act Ready. 1 den zdarma.",
     url: "https://aibaimy.cloud",
     siteName: "AIBaimy",
     locale: "cs_CZ",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AIBaimy — 5 vrstev ochrany AIBguard pro děti v AI vzdělávání",
     description:
-      "Fail-closed AI, krizová detekce 116 111, AES-256, EU AI Act Ready. 14 dní zdarma.",
+      "Fail-closed AI, krizová detekce 116 111, AES-256, EU AI Act Ready. 1 den zdarma.",
     images: ["/og-image.png"],
   },
   robots: {

@@ -98,7 +98,7 @@ const STEPS = [
     num: "01",
     emoji: "✉️",
     title: "Registrace rodiče",
-    desc: "Vytvořte rodičovský účet e-mailem za 2 minuty. Bez kreditní karty. Plný přístup ke všem funkcím ihned.",
+    desc: "Vytvořte rodičovský účet e-mailem za 2 minuty. Karta nutná před trialem. Plný přístup ke všem funkcím ihned.",
     color: "#00e5ff",
     bg: "rgba(0,229,255,0.12)",
     image: "/images/step-register.png",
@@ -205,7 +205,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-            <a href="https://app.aibgin.cz/registrace" className="btn-primary hide-mob" style={{ padding: "10px 26px", fontSize: "0.78rem" }}>14 dní zdarma</a>
+            <a href="https://app.aibaimy.cloud/pro-rodice" className="btn-primary hide-mob" style={{ padding: "10px 26px", fontSize: "0.78rem" }}>1 den zdarma</a>
             <button
               className="hamburger-btn"
               onClick={() => setMobileNav(!mobileNav)}
@@ -234,8 +234,8 @@ export default function Home() {
             {[["Ochrana", "#ochrana"], ["Funkce", "#funkce"], ["Ceník", "#cenik"], ["FAQ", "#faq"]].map(([l, h]) => (
               <a key={h} href={h} onClick={() => setMobileNav(false)} style={{ color: "rgba(255,255,255,0.85)", fontSize: "1.05rem", fontWeight: 700, textDecoration: "none", padding: "4px 0" }}>{l}</a>
             ))}
-            <a href="https://app.aibgin.cz/registrace" className="btn-primary" style={{ textAlign: "center", marginTop: 8 }} onClick={() => setMobileNav(false)}>
-              14 dní zdarma
+            <a href="https://app.aibaimy.cloud/pro-rodice" className="btn-primary" style={{ textAlign: "center", marginTop: 8 }} onClick={() => setMobileNav(false)}>
+              1 den zdarma
             </a>
           </div>
         )}
@@ -264,7 +264,7 @@ export default function Home() {
               QR přístup — dítě nepotřebuje účet.
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginBottom: 40 }}>
-              <a href="#cta" className="btn-primary">Vyzkoušet zdarma 14 dní</a>
+              <a href="#cta" className="btn-primary">Vyzkoušet zdarma 1 den</a>
               <a href="#ochrana" className="btn-outline">5 vrstev ochrany →</a>
             </div>
 
@@ -409,7 +409,7 @@ export default function Home() {
               ))}
             </div>
             <div style={{ marginTop: 32 }}>
-              <a href="#cta" className="btn-primary">Vyzkoušet zdarma 14 dní</a>
+              <a href="#cta" className="btn-primary">Vyzkoušet zdarma 1 den</a>
             </div>
           </div>
         </div>
@@ -512,9 +512,9 @@ export default function Home() {
             <div className="price-card" style={{ background: "rgba(0,229,255,0.04)", border: "2px solid rgba(0,229,255,0.2)" }}>
               <div style={{ fontSize: "0.65rem", letterSpacing: "0.25em", color: "#00e5ff", marginBottom: 14, textTransform: "uppercase", fontWeight: 800 }}>Zkušební období</div>
               <div style={{ fontSize: "3rem", fontWeight: 900, lineHeight: 1 }}>Zdarma</div>
-              <div style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.4)", margin: "8px 0 24px" }}>14 dní · bez kreditní karty · bez závazků</div>
+              <div style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.4)", margin: "8px 0 24px" }}>1 den zdarma · karta nutná · zrušit kdykoliv</div>
               <p style={{ fontSize: "0.88rem", color: "rgba(255,255,255,0.58)", lineHeight: 1.75, marginBottom: 28 }}>
-                Plný přístup ke všem 5 vrstvám ochrany, dashboardu i notifikacím. Po 14 dnech se rozhodujete sami.
+                Plný přístup ke všem 5 vrstvám ochrany, dashboardu i notifikacím. Po 1 dni zkušební doby se rozhodujete sami.
               </p>
               <a href="#cta" className="btn-primary" style={{ display: "block", textAlign: "center" }}>Začít zdarma</a>
             </div>
@@ -579,21 +579,21 @@ export default function Home() {
           <h2 style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)", fontWeight: 900, marginBottom: 18, letterSpacing: "-0.02em" }}>
             Vyzkoušejte AIBaimy{" "}
             <span style={{ background: "linear-gradient(135deg, #00e5ff, #a78bfa)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-              14 dní zdarma
+              1 den zdarma
             </span>
           </h2>
           <p style={{ fontSize: "1rem", color: "rgba(255,255,255,0.55)", lineHeight: 1.8, maxWidth: 500, margin: "0 auto 36px" }}>
             5 vrstev ochrany AIBguard aktivních od první sekundy.
-            Žádná kreditní karta. Žádné závazky. Dítě nepotřebuje účet.
+            Karta nutná před trialem. Žádné závazky. Dítě nepotřebuje účet.
           </p>
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap", marginBottom: 24 }}>
             <a
-              href="https://app.aibgin.cz/registrace"
+              href="https://app.aibaimy.cloud/pro-rodice"
               className="btn-primary"
               style={{ padding: "16px 48px", fontSize: "0.95rem" }}
               onClick={() => (window as any).gtag?.("event", "begin_trial", { currency: "CZK", value: 299 })}
             >
-              Vyzkoušet zdarma 14 dní
+              Vyzkoušet zdarma 1 den
             </a>
             <a href="mailto:info@aiblab.cz" className="btn-outline">Kontaktovat obchod</a>
           </div>
@@ -640,7 +640,7 @@ export default function Home() {
                 <a href="https://aibgin.cz" target="_blank" rel="noopener noreferrer" className="footer-link">AIBgin platforma</a>
                 <a href="https://aiblab.cz" target="_blank" rel="noopener noreferrer" className="footer-link">aiblab.cz</a>
                 <a href="https://aibsn.org" target="_blank" rel="noopener noreferrer" className="footer-link">AIBSN Global Registry</a>
-                <a href="https://app.aibgin.cz/registrace" className="footer-link" style={{ color: "#00e5ff" }}>Přihlásit se →</a>
+                <a href="https://app.aibaimy.cloud/pro-rodice" className="footer-link" style={{ color: "#00e5ff" }}>Přihlásit se →</a>
               </div>
             </div>
             {/* Právní */}
