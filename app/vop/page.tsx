@@ -27,7 +27,7 @@ export default function VOP() {
           <p>Uživatel je povinen při registraci uvést pravdivé a úplné údaje. Uživatel odpovídá za bezpečnost přihlašovacích údajů. Účet je nepřenosný. Poskytovatel si vyhrazuje právo zrušit účet, který porušuje tyto VOP.</p>
 
           <h2>4. Zkušební období a předplatné</h2>
-          <p>Poskytovatel nabízí bezplatné zkušební období v délce <strong>14 kalendářních dnů</strong> od registrace. Po uplynutí zkušebního období přechází služba do placeného modelu ve výši <strong>299 Kč bez DPH za každý započatý kalendářní měsíc</strong>, pokud Uživatel nezruší předplatné před jeho uplynutím. Kreditní karta není při registraci vyžadována.</p>
+          <p>Poskytovatel nabízí bezplatné zkušební období v délce <strong>14 kalendářních dnů</strong> od registrace. Po uplynutí zkušebního období přechází služba do placeného modelu ve výši <strong>199 Kč bez DPH za každý započatý kalendářní měsíc</strong>, pokud Uživatel nezruší předplatné před jeho uplynutím. Kreditní karta není při registraci vyžadována.</p>
           <p>Předplatné se automaticky obnovuje každý měsíc, dokud jej Uživatel nezruší. Zrušení lze provést v nastavení účtu nebo e-mailem na info@aiblab.cz. Zrušení je účinné k poslednímu dni aktuálního fakturačního období.</p>
 
           <h2>5. Platební podmínky</h2>

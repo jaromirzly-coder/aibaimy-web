@@ -228,7 +228,7 @@ export default function Home() {
       {/* ── Prázdninový banner ── */}
       <div style={{ position: "fixed", top: 68, left: 0, right: 0, zIndex: 90, background: "linear-gradient(90deg, #d97706 0%, #f59e0b 100%)", padding: "13px 28px", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", gap: 20, flexWrap: "wrap" }}>
         <span style={{ color: "#fff", fontWeight: 700, fontSize: "0.92rem" }}>
-          🌞 Prázdninový start AIBaimy — 2 měsíce za 599 Kč. Plná verze od 1. července 2026.
+          🌞 Prázdninová akce — 2 měsíce za 299 Kč. Plná verze od 1. července 2026.
         </span>
         <a href="#cta" style={{ padding: "7px 20px", background: "#fff", color: "#92400e", borderRadius: 8, fontWeight: 800, fontSize: "0.8rem", textDecoration: "none", whiteSpace: "nowrap" }}>
           Chci prázdninový balíček →
@@ -498,6 +498,21 @@ export default function Home() {
           <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 900, textAlign: "center", marginBottom: 48, letterSpacing: "-0.02em" }}>
             Jednoduchá cena, úplná ochrana 💰
           </h2>
+          {/* ── Prázdninová akce ── */}
+          <div style={{ marginBottom: 28, background: "linear-gradient(135deg, rgba(217,119,6,0.12) 0%, rgba(245,158,11,0.08) 100%)", border: "2px solid rgba(245,158,11,0.5)", borderRadius: 16, padding: "18px 28px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 16 }}>
+            <div>
+              <div style={{ fontSize: "0.65rem", letterSpacing: "0.2em", color: "#f59e0b", textTransform: "uppercase", fontWeight: 900, marginBottom: 4 }}>🌞 Prázdninová akce</div>
+              <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
+                <span style={{ fontSize: "2rem", fontWeight: 900, color: "#fff" }}>299 Kč</span>
+                <span style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.5)" }}>za 2 měsíce</span>
+              </div>
+              <div style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.4)", marginTop: 3 }}>Plná verze od 1. července 2026 · běžná cena 199 Kč/měs.</div>
+            </div>
+            <a href="#cta" className="btn-primary" style={{ background: "linear-gradient(135deg, #d97706, #f59e0b)", color: "#0a0e1a", fontWeight: 900, whiteSpace: "nowrap" }}>
+              Chci prázdninovou akci →
+            </a>
+          </div>
+
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 28, alignItems: "start" }} className="grid-2">
             {/* Free */}
             <div className="price-card" style={{ background: "rgba(0,229,255,0.04)", border: "2px solid rgba(0,229,255,0.2)" }}>
@@ -512,7 +527,7 @@ export default function Home() {
             <div className="price-card" style={{ background: "rgba(255,215,0,0.04)", border: "2px solid rgba(255,215,0,0.3)", position: "relative" }}>
               <div style={{ fontSize: "0.65rem", letterSpacing: "0.25em", color: "#ffd700", marginBottom: 14, textTransform: "uppercase", fontWeight: 800 }}>Rodičovský plán</div>
               <div style={{ display: "flex", alignItems: "baseline", gap: 6 }}>
-                <span style={{ fontSize: "3rem", fontWeight: 900, lineHeight: 1 }}>299</span>
+                <span style={{ fontSize: "3rem", fontWeight: 900, lineHeight: 1 }}>199</span>
                 <span style={{ fontSize: "1rem", color: "rgba(255,255,255,0.5)" }}>Kč / měs.</span>
               </div>
               <div style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.4)", margin: "8px 0 24px" }}>Po uplynutí zkušební doby</div>

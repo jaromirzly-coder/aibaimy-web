@@ -3,32 +3,46 @@ import { Nunito } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-const jsonLdProduct = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  name: "AIBaimy Rodičovský plán",
-  url: "https://aibaimy.cloud",
-  offers: {
-    "@type": "Offer",
-    price: 299,
-    priceCurrency: "CZK",
-    billingPeriod: "P1M",
-    url: "https://aibaimy.cloud",
+const jsonLdSchemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "AIBaimy",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web",
+    "image": "https://aibaimy.cloud/og-image.png",
+    "description": "Rodičovský přehled pro bezpečné AI vzdělávání dětí 7–11 let. 5 vrstev ochrany AIBguard, fail-closed architektura, krizová detekce 116 111, AES-256 šifrování v EU.",
+    "url": "https://aibaimy.cloud",
+    "offers": {
+      "@type": "Offer",
+      "price": "199",
+      "priceCurrency": "CZK",
+      "availability": "https://schema.org/InStock",
+      "description": "Rodičovský plán — měsíční předplatné",
+      "seller": { "@type": "Organization", "name": "SAY TO PAY s.r.o." }
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SAY TO PAY s.r.o.",
+      "url": "https://aiblab.cz",
+      "logo": "https://aibaimy.cloud/images/logo.png",
+      "identifier": "08694222",
+      "contactPoint": { "@type": "ContactPoint", "email": "info@aiblab.cz", "contactType": "customer support" },
+      "sameAs": ["https://aiblab.cz", "https://aibgin.cz", "https://aibsn.org"]
+    }
   },
-};
-
-const jsonLdOrganization = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "AIBaimy",
-  url: "https://aibaimy.cloud",
-  description: "AI safety platforma pro děti a rodiče",
-  sameAs: [
-    "https://aiblab.cz",
-    "https://aibgin.cz",
-    "https://aibsn.org",
-  ],
-};
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Co se stane, když AI napíše nevhodný obsah?", "acceptedAnswer": { "@type": "Answer", "text": "Díky fail-closed architektuře AIBguard: pokud jakákoliv ze 5 vrstev detekuje problém nebo selže kontrola, odpověď je okamžitě zablokována. Rodič obdrží push notifikaci do 3 sekund." } },
+      { "@type": "Question", "name": "Jak funguje napojení na Linku bezpečí 116 111?", "acceptedAnswer": { "@type": "Answer", "text": "4. vrstva ochrany kontinuálně analyzuje obsah konverzace. Při detekci krizových vzorců je rodič okamžitě notifikován a systém zahájí protokol pro kontakt s Linkou bezpečí 116 111." } },
+      { "@type": "Question", "name": "Může dítě obejít bezpečnostní vrstvy?", "acceptedAnswer": { "@type": "Answer", "text": "Ne. Dítě přistupuje výhradně přes QR kód vygenerovaný rodičem. Bez platného QR kódu nelze AIBgin platformu spustit." } },
+      { "@type": "Question", "name": "Kde jsou data mého dítěte uložena?", "acceptedAnswer": { "@type": "Answer", "text": "Výhradně v EU — Supabase Frankfurt (eu-central-1). AES-256 šifrování, nikdy neopustí EU." } },
+      { "@type": "Question", "name": "Co znamená nulová digitální stopa dítěte?", "acceptedAnswer": { "@type": "Answer", "text": "Dítě nemá účet. Po smazání rodičovského účtu jsou data anonymizována do 30 dní." } }
+    ]
+  }
+];
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -104,14 +118,13 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdProduct) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganization) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchemas) }}
         />
       </head>
       <body>
+        <div style={{ background: "#1a1a2e", color: "#fff", textAlign: "center", padding: "12px", fontSize: "14px", fontWeight: "600", position: "sticky", top: "0", zIndex: 9999 }}>
+          Plná verze bude spuštěna 1. 7. 2026 — připravujeme pro vás něco výjimečného
+        </div>
         {children}
         <Script
           strategy="afterInteractive"
