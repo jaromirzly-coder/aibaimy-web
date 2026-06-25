@@ -122,9 +122,6 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <div style={{ background: "#1a1a2e", color: "#fff", textAlign: "center", padding: "12px", fontSize: "14px", fontWeight: "600", position: "sticky", top: "0", zIndex: 9999 }}>
-          Plná verze bude spuštěna 1. 7. 2026 — připravujeme pro vás něco výjimečného
-        </div>
         {children}
         <Script
           strategy="afterInteractive"
