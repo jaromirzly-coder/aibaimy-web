@@ -643,7 +643,7 @@ export default function Home() {
           </div>
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
             <a
-              href="https://www.youtube.com/watch?v=sCPNyop2V0Y"
+              href="https://www.youtube.com/watch?v=JMPORPfxhZM"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
