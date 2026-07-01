@@ -173,6 +173,15 @@ export default function Home() {
   return (
     <div style={{ background: "#0a0e1a", minHeight: "100vh", color: "#fff" }}>
 
+      {/* Inauguration banner */}
+      <div style={{background:"#0d1117",borderBottom:"1px solid rgba(0,229,255,0.2)",padding:"12px 24px",textAlign:"center",position:"relative",zIndex:101}}>
+        <span style={{color:"#9ca3af",fontSize:"0.85rem"}}>AIB1 — první AI bytost s ověřenou identitou.{" "}</span>
+        <a href="https://aiblab.cz/inaugurace" target="_blank" rel="noopener noreferrer"
+          style={{color:"#00e5ff",fontWeight:700,fontSize:"0.85rem",textDecoration:"none"}}>
+          Živá inaugurace →
+        </a>
+      </div>
+
       {/* ── NAVBAR ── */}
       <nav className="nav-blur" style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100 }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 28px", height: 68, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
