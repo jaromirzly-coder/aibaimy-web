@@ -643,11 +643,22 @@ export default function Home() {
           </div>
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
             <a
-              href="https://aiblab.cz/cs/inaugurace"
+              href="https://www.youtube.com/watch?v=sCPNyop2V0Y"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary"
               style={{ background: "linear-gradient(135deg, #6C47FF, #9B7AFF)" }}
             >
-              Chat s AIB1 — 1. července, zdarma
+              ▶ Sledovat živě
+            </a>
+            <a
+              href="https://avatar.aiblab.info/call.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+              style={{ background: "linear-gradient(135deg, #6C47FF, #9B7AFF)" }}
+            >
+              🎙 Promluvit si s AIB1
             </a>
             <a
               href="https://aibsn.org"
