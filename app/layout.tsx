@@ -10,7 +10,8 @@ const jsonLdSchemas = [
     "name": "AIBaimy",
     "applicationCategory": "EducationalApplication",
     "operatingSystem": "Web",
-    "image": "https://aibaimy.cloud/og-image.png",
+    // TODO: finální og-image.png 1200x630 – dodá Jaromír
+    "image": "https://aibaimy.cloud/images/hero-dashboard.png",
     "description": "Rodičovský přehled pro bezpečné AI vzdělávání dětí 7–11 let. 5 vrstev ochrany AIBguard, fail-closed architektura, krizová detekce 116 111, AES-256 šifrování v EU.",
     "url": "https://aibaimy.cloud",
     "offers": {
@@ -74,14 +75,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AIBaimy — 5 vrstev ochrany pro vaše dítě v AI vzdělávání",
     description:
-      "Jediné řešení v ČR s technickou garancí bezpečnosti AI pro děti 7–11 let. Fail-closed architektura, krizová detekce 116 111, AES-256, EU AI Act Ready. 1 den zdarma.",
+      "Jedno z mála řešení v ČR s technickou garancí bezpečnosti AI pro děti 7–11 let. Fail-closed architektura, krizová detekce 116 111, AES-256, EU AI Act Ready. 1 den zdarma.",
     url: "https://aibaimy.cloud",
     siteName: "AIBaimy",
     locale: "cs_CZ",
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/images/hero-dashboard.png",
         width: 1200,
         height: 630,
         alt: "AIBaimy — 5 vrstev ochrany AIBguard pro děti 7–11 let",
@@ -93,7 +94,7 @@ export const metadata: Metadata = {
     title: "AIBaimy — 5 vrstev ochrany AIBguard pro děti v AI vzdělávání",
     description:
       "Fail-closed AI, krizová detekce 116 111, AES-256, EU AI Act Ready. 1 den zdarma.",
-    images: ["/og-image.png"],
+    images: ["/images/hero-dashboard.png"],
   },
   robots: {
     index: true,

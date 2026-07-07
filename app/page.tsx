@@ -21,7 +21,7 @@ const LAYERS = [
     icon: "🛡️",
     title: "Guardian Middleware",
     subtitle: "Fail-closed: pokud audit selže, odpověď je zablokována",
-    desc: "Každá odpověď AI prochází dvojí real-time kontrolou pomocí AIBguardian middleware. Fail-closed architektura zajišťuje, že při jakékoliv chybě nebo pochybnosti je obsah zablokován — nikdy nezveřejněn.",
+    desc: "Každá odpověď AI prochází dvojí real-time kontrolou pomocí AIBguard middleware. Fail-closed architektura zajišťuje, že při jakékoliv chybě nebo pochybnosti je obsah zablokován — nikdy nezveřejněn.",
     color: "#a78bfa",
     border: "rgba(167,139,250,0.25)",
     bg: "rgba(167,139,250,0.06)",
@@ -127,8 +127,8 @@ const COMPLIANCE = [
   },
   {
     icon: "🏆",
-    title: "Jediné řešení v ČR s technickou garancí",
-    desc: "Kombinace fail-closed architektury, AIBSN identity vrstvy, krizové detekce 116 111 tvoří unikátní technologický stack. Žádné jiné AI řešení na českém trhu nenabízí ekvivalentní technickou ochranu.",
+    title: "Jedno z mála řešení v ČR s technickou garancí",
+    desc: "Kombinace fail-closed architektury, AIBSN identity vrstvy, krizové detekce 116 111 tvoří unikátní technologický stack. Málokdo na českém trhu nabízí srovnatelnou ochranu.",
     color: "#ffd700",
     border: "rgba(255,215,0,0.2)",
   },
@@ -178,7 +178,7 @@ export default function Home() {
         <span style={{color:"#9ca3af",fontSize:"0.85rem"}}>AIB1 — první AI bytost s ověřenou identitou.{" "}</span>
         <a href="https://aiblab.cz/inaugurace" target="_blank" rel="noopener noreferrer"
           style={{color:"#00e5ff",fontWeight:700,fontSize:"0.85rem",textDecoration:"none"}}>
-          Živá inaugurace →
+          Záznam inaugurace →
         </a>
       </div>
 
@@ -237,7 +237,7 @@ export default function Home() {
       {/* ── Prázdninový banner ── */}
       <div style={{ position: "fixed", top: 68, left: 0, right: 0, zIndex: 90, background: "linear-gradient(90deg, #d97706 0%, #f59e0b 100%)", padding: "13px 28px", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", gap: 20, flexWrap: "wrap" }}>
         <span style={{ color: "#fff", fontWeight: 700, fontSize: "0.92rem" }}>
-          🌞 Prázdninová akce — 2 měsíce za 299 Kč. Plná verze od 1. července 2026.
+          🌞 Prázdninová akce — 2 měsíce za 299 Kč. Běží celé prázdniny.
         </span>
         <a href="#cta" style={{ padding: "7px 20px", background: "#fff", color: "#92400e", borderRadius: 8, fontWeight: 800, fontSize: "0.8rem", textDecoration: "none", whiteSpace: "nowrap" }}>
           Chci prázdninový balíček →
@@ -467,13 +467,13 @@ export default function Home() {
           </div>
           <p className="section-label" style={{ marginBottom: 10, textAlign: "center" }}>Technická garance</p>
           <h2 style={{ fontSize: "clamp(1.6rem, 3vw, 2.4rem)", fontWeight: 900, textAlign: "center", marginBottom: 12, letterSpacing: "-0.02em" }}>
-            Jediné řešení v ČR<br />
+            Jedno z mála řešení v ČR<br />
             <span style={{ background: "linear-gradient(135deg, #00e5ff, #a78bfa)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
               s technickou garancí bezpečnosti
             </span>
           </h2>
           <p style={{ fontSize: "0.92rem", color: "rgba(255,255,255,0.42)", textAlign: "center", maxWidth: 560, margin: "0 auto 52px" }}>
-            Nestačí říct „jsme bezpeční". AIBaimy jako první v ČR nabízí technicky vynucenou bezpečnost —
+            Nestačí říct „jsme bezpeční". AIBaimy patří mezi první v ČR, kdo nabízí technicky vynucenou bezpečnost —
             nikoliv smluvní slib.
           </p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24, marginBottom: 36 }} className="grid-3">
@@ -515,7 +515,7 @@ export default function Home() {
                 <span style={{ fontSize: "2rem", fontWeight: 900, color: "#fff" }}>299 Kč</span>
                 <span style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.5)" }}>za 2 měsíce</span>
               </div>
-              <div style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.4)", marginTop: 3 }}>Plná verze od 1. července 2026 · běžná cena 199 Kč/měs.</div>
+              <div style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.4)", marginTop: 3 }}>Akce platí po celé prázdniny 2026 · běžná cena 199 Kč/měs.</div>
             </div>
             <a href="#cta" className="btn-primary" style={{ background: "linear-gradient(135deg, #d97706, #f59e0b)", color: "#0a0e1a", fontWeight: 900, whiteSpace: "nowrap" }}>
               Chci prázdninovou akci →
@@ -650,7 +650,7 @@ export default function Home() {
               className="btn-primary"
               style={{ background: "linear-gradient(135deg, #6C47FF, #9B7AFF)" }}
             >
-              ▶ Sledovat živě
+              ▶ Záznam inaugurace
             </a>
             <a
               href="https://avatar.aiblab.info/call.html"
