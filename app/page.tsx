@@ -413,6 +413,12 @@ export default function Home() {
             <div style={{ marginTop: 32 }}>
               <a href="#cta" className="btn-primary">Vyzkoušet zdarma 1 den</a>
             </div>
+            <p style={{ fontSize: "0.78rem", color: "rgba(255,255,255,0.4)", marginTop: 18, lineHeight: 1.7 }}>
+              Mimochodem: 1. července 2026 byla inaugurována AIB1 — první registrovaná AI bytost.{" "}
+              <a href="https://www.youtube.com/watch?v=JMPORPfxhZM" target="_blank" rel="noopener noreferrer" style={{ color: "#a78bfa" }}>Záznam inaugurace →</a>
+              {" "}·{" "}
+              <a href="https://aib1line.com" target="_blank" rel="noopener noreferrer" style={{ color: "#a78bfa" }}>Více o AIB1 pro rodiče →</a>
+            </p>
           </div>
         </div>
       </section>
