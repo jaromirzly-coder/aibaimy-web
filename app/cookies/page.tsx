@@ -57,7 +57,7 @@ export default function Cookies() {
           <p>Tuto Cookie Policy můžeme aktualizovat. O podstatných změnách vás budeme informovat e-mailem nebo oznámením v aplikaci.</p>
 
           <h2>6. Kontakt</h2>
-          <p>Dotazy ohledně cookies: gdpr@aiblab.cz</p>
+          <p>Dotazy ohledně cookies: info@aiblab.cz</p>
         </div>
       </main>
       <footer style={{ borderTop: "1px solid rgba(255,255,255,0.06)", padding: "24px 28px", textAlign: "center" }}>

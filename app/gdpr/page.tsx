@@ -18,7 +18,7 @@ export default function GDPR() {
           <p style={{ color: "rgba(255,255,255,0.4)", fontSize: "0.85rem", marginBottom: 40 }}>Platné od 1. 6. 2026 · GDPR (EU) 2016/679 · SAY TO PAY s.r.o.</p>
 
           <h2>1. Správce osobních údajů</h2>
-          <p>Správcem osobních údajů je <strong>SAY TO PAY s.r.o.</strong> (dále jen „Správce"), provozovatel služby AIBaimy. Kontakt pro ochranu osobních údajů: <strong>gdpr@aiblab.cz</strong>.</p>
+          <p>Správcem osobních údajů je <strong>SAY TO PAY s.r.o.</strong> (dále jen „Správce"), provozovatel služby AIBaimy. Kontakt pro ochranu osobních údajů: <strong>info@aiblab.cz</strong>.</p>
 
           <h2>2. Jaké údaje zpracováváme</h2>
           <p>Zpracováváme následující kategorie osobních údajů:</p>
@@ -72,7 +72,7 @@ export default function GDPR() {
           </ul>
 
           <h2>9. Kontakt pro ochranu osobních údajů</h2>
-          <p>Žádosti o uplatnění práv zasílejte na: <strong>gdpr@aiblab.cz</strong>. Odpovíme do 30 dnů.</p>
+          <p>Žádosti o uplatnění práv zasílejte na: <strong>info@aiblab.cz</strong>. Odpovíme do 30 dnů.</p>
         </div>
       </main>
       <footer style={{ borderTop: "1px solid rgba(255,255,255,0.06)", padding: "24px 28px", textAlign: "center" }}>

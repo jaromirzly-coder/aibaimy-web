@@ -26,13 +26,12 @@ export default function Reklamace() {
             <li>Nefunkčnost aplikace přesahující 24 hodin v kalendářním měsíci (mimo plánovanou údržbu)</li>
             <li>Nedoručení bezpečnostních notifikací, které mají být dle nastavení doručovány</li>
             <li>Nesprávné zobrazení dat dítěte (záměna s jiným uživatelem)</li>
-            <li>Nemožnost přihlášení po dobu delší než 4 hodiny</li>
           </ul>
 
           <h2>3. Jak podat reklamaci</h2>
           <p>Reklamaci lze uplatnit:</p>
           <ul>
-            <li><strong>E-mailem:</strong> reklamace@aiblab.cz (preferovaná cesta)</li>
+            <li><strong>E-mailem:</strong> info@aiblab.cz (preferovaná cesta)</li>
             <li><strong>Korespondenčně:</strong> na adrese sídla společnosti SAY TO PAY s.r.o.</li>
           </ul>
           <p>Reklamace musí obsahovat: jméno a e-mail registrovaného účtu, popis závady, datum a čas výskytu, snímek obrazovky (pokud je to možné).</p>
@@ -56,7 +55,7 @@ export default function Reklamace() {
           </ul>
 
           <h2>7. Kontakt</h2>
-          <p>E-mail: reklamace@aiblab.cz · Odpověď do 2 pracovních dnů</p>
+          <p>E-mail: info@aiblab.cz · Odpověď do 2 pracovních dnů</p>
         </div>
       </main>
       <footer style={{ borderTop: "1px solid rgba(255,255,255,0.06)", padding: "24px 28px", textAlign: "center" }}>
