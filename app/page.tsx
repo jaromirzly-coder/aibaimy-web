@@ -5,6 +5,9 @@ import { useState } from "react";
 
 /* ── Data ───────────────────────────────────────────────── */
 
+// TODO: onboarding video/screenshot registrace – dodá Jaromír
+const ONBOARDING_VIDEO_URL: string | null = null;
+
 const LAYERS = [
   {
     num: "01",
@@ -51,7 +54,7 @@ const LAYERS = [
     icon: "🔒",
     title: "Data Shield · AES-256",
     subtitle: "Nulová digitální stopa — data dítěte nikdy neopustí EU",
-    desc: "Dítě nemá vlastní účet — přistupuje přes QR kód. Po ukončení lekce nezůstává žádná identifikovatelná digitální stopa.",
+    desc: "Dítě nemá vlastní účet — přistupuje přes QR kód. Po ukončení lekce nezůstává žádná identifikovatelná digitální stopa. Veškerá data jsou šifrována AES-256 a nikdy neopustí EU.",
     color: "#ffd700",
     border: "rgba(255,215,0,0.25)",
     bg: "rgba(255,215,0,0.06)",
@@ -173,17 +176,16 @@ export default function Home() {
   return (
     <div style={{ background: "#0a0e1a", minHeight: "100vh", color: "#fff" }}>
 
-      {/* Inauguration banner */}
-      <div style={{background:"#0d1117",borderBottom:"1px solid rgba(0,229,255,0.2)",padding:"12px 24px",textAlign:"center",position:"relative",zIndex:101}}>
-        <span style={{color:"#9ca3af",fontSize:"0.85rem"}}>AIB1 — první AI bytost s ověřenou identitou.{" "}</span>
-        <a href="https://aiblab.cz/inaugurace" target="_blank" rel="noopener noreferrer"
-          style={{color:"#00e5ff",fontWeight:700,fontSize:"0.85rem",textDecoration:"none"}}>
-          Záznam inaugurace →
-        </a>
-      </div>
-
-      {/* ── NAVBAR ── */}
+      {/* ── NAVBAR (includes inauguration banner) ── */}
       <nav className="nav-blur" style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 100 }}>
+        {/* Inauguration banner */}
+        <div style={{background:"#0d1117",borderBottom:"1px solid rgba(0,229,255,0.2)",padding:"12px 24px",textAlign:"center"}}>
+          <span style={{color:"#9ca3af",fontSize:"0.85rem"}}>AIB1 — první AI bytost s ověřenou identitou.{" "}</span>
+          <a href="https://aiblab.cz/inaugurace" target="_blank" rel="noopener noreferrer"
+            style={{color:"#00e5ff",fontWeight:700,fontSize:"0.85rem",textDecoration:"none"}}>
+            Záznam inaugurace →
+          </a>
+        </div>
         <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 28px", height: 68, display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <Image src="/images/logo.png" alt="AIBaimy logo" width={36} height={36} style={{ objectFit: "contain" }} />
@@ -235,7 +237,7 @@ export default function Home() {
       </nav>
 
       {/* ── Prázdninový banner ── */}
-      <div style={{ position: "fixed", top: 68, left: 0, right: 0, zIndex: 90, background: "linear-gradient(90deg, #d97706 0%, #f59e0b 100%)", padding: "13px 28px", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", gap: 20, flexWrap: "wrap" }}>
+      <div style={{ position: "fixed", top: 112, left: 0, right: 0, zIndex: 90, background: "linear-gradient(90deg, #d97706 0%, #f59e0b 100%)", padding: "13px 28px", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", gap: 20, flexWrap: "wrap" }}>
         <span style={{ color: "#fff", fontWeight: 700, fontSize: "0.92rem" }}>
           🌞 Prázdninová akce — 2 měsíce za 299 Kč. Běží celé prázdniny.
         </span>
@@ -245,7 +247,7 @@ export default function Home() {
       </div>
 
       {/* ── HERO ── */}
-      <section style={{ paddingTop: 196, paddingBottom: 72, padding: "196px 28px 72px" }}>
+      <section style={{ padding: "240px 28px 72px" }}>
         <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 64, alignItems: "center" }} className="grid-2">
           {/* Left */}
           <div>
@@ -394,11 +396,11 @@ export default function Home() {
               <span style={{ color: "#a78bfa" }}>mít jistotu</span> 💜
             </h2>
             <p style={{ fontSize: "0.95rem", color: "rgba(255,255,255,0.62)", lineHeight: 1.85, marginBottom: 10 }}>
-              AIBgin platforma byla od začátku navržena jako bezpečné AI pro děti. Díky rostoucí poptávce rodičů jsme vyvinuli AIBaimy — rodičovskou aplikaci přímo odvozenou z AIBgin platformy. AIBaimy je primárně určena rodičům dětí ve věku 7–11 let(lze nastavit větší rozpětí věku), kteří chtějí mít přehled o tom, jak jejich dítě pracuje s AI — bezpečně, transparentně a bez starostí.
+              AIBgin platforma byla od začátku navržena jako bezpečné AI pro děti. Díky rostoucí poptávce rodičů jsme vyvinuli AIBaimy — rodičovskou aplikaci přímo odvozenou z AIBgin platformy. AIBaimy je primárně určena rodičům dětí ve věku 7–11 let (lze nastavit větší rozpětí věku), kteří chtějí mít přehled o tom, jak jejich dítě pracuje s AI — bezpečně, transparentně a bez starostí.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 14, marginTop: 28 }}>
               {[
-                { icon: "🧒", text: "Děti které používají AIBgin platformu si hrají, učí se a chatujou s AI bez rizika" },
+                { icon: "🧒", text: "Děti které používají AIBgin platformu si hrají, učí se a chatují s AI bez rizika" },
                 { icon: "🏠", text: "Domácí vzdělávání (homeschooling)" },
                 { icon: "🔐", text: "Každý rodič který chce mít jistotu bezpečnosti svého dítěte v AI světě" },
               ].map((item) => (
@@ -595,6 +597,20 @@ export default function Home() {
             5 vrstev ochrany AIBguard aktivních od první sekundy.
             Karta nutná před trialem. Žádné závazky. Dítě nepotřebuje účet.
           </p>
+          {/* TODO: onboarding video/screenshot registrace – dodá Jaromír */}
+          {ONBOARDING_VIDEO_URL && (
+            <div
+              style={{ position: "relative", paddingTop: "56.25%", borderRadius: 16, overflow: "hidden", marginBottom: 36 }}
+            >
+              <iframe
+                src={ONBOARDING_VIDEO_URL}
+                title="Onboarding — registrace AIBaimy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
+              />
+            </div>
+          )}
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap", marginBottom: 24 }}>
             <a
               href="mailto:info@aiblab.cz"
@@ -642,16 +658,18 @@ export default function Home() {
               .
             </p>
           </div>
+          <div
+            style={{ position: "relative", paddingTop: "56.25%", borderRadius: 16, overflow: "hidden", marginBottom: 36 }}
+          >
+            <iframe
+              src="https://www.youtube.com/embed/JMPORPfxhZM"
+              title="Záznam inaugurace AIB1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
+            />
+          </div>
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
-            <a
-              href="https://www.youtube.com/watch?v=JMPORPfxhZM"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary"
-              style={{ background: "linear-gradient(135deg, #6C47FF, #9B7AFF)" }}
-            >
-              ▶ Záznam inaugurace
-            </a>
             <a
               href="https://avatar.aiblab.info/call.html"
               target="_blank"
