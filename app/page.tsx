@@ -200,7 +200,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-            <a href="mailto:info@aiblab.info" className="btn-primary hide-mob" style={{ padding: "10px 26px", fontSize: "0.78rem" }}>1 den zdarma</a>
+            <a href="mailto:info@aiblab.cz" className="btn-primary hide-mob" style={{ padding: "10px 26px", fontSize: "0.78rem" }}>1 den zdarma</a>
             <button
               className="hamburger-btn"
               onClick={() => setMobileNav(!mobileNav)}
@@ -229,7 +229,7 @@ export default function Home() {
             {[["Ochrana", "#ochrana"], ["Jak to funguje", "#jak-to-funguje"], ["Ceník", "#cenik"], ["FAQ", "#faq"]].map(([l, h]) => (
               <a key={h} href={h} onClick={() => setMobileNav(false)} style={{ color: "rgba(255,255,255,0.85)", fontSize: "1.05rem", fontWeight: 700, textDecoration: "none", padding: "4px 0" }}>{l}</a>
             ))}
-            <a href="mailto:info@aiblab.info" className="btn-primary" style={{ textAlign: "center", marginTop: 8 }} onClick={() => setMobileNav(false)}>
+            <a href="mailto:info@aiblab.cz" className="btn-primary" style={{ textAlign: "center", marginTop: 8 }} onClick={() => setMobileNav(false)}>
               1 den zdarma
             </a>
           </div>
@@ -619,17 +619,17 @@ export default function Home() {
           )}
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap", marginBottom: 24 }}>
             <a
-              href="mailto:info@aiblab.info"
+              href="mailto:info@aiblab.cz"
               className="btn-primary"
               style={{ padding: "16px 48px", fontSize: "0.95rem" }}
             >
               Vyzkoušet zdarma 1 den
             </a>
-            <a href="mailto:info@aiblab.info" className="btn-outline">Kontaktovat obchod</a>
+            <a href="mailto:info@aiblab.cz" className="btn-outline">Kontaktovat obchod</a>
           </div>
           <p style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.28)" }}>
             Nebo napište na{" "}
-            <a href="mailto:info@aiblab.info" style={{ color: "#00e5ff", textDecoration: "none" }}>info@aiblab.info</a>
+            <a href="mailto:info@aiblab.cz" style={{ color: "#00e5ff", textDecoration: "none" }}>info@aiblab.cz</a>
             {" "}· Odpovíme do 24 hodin
           </p>
         </div>
@@ -731,7 +731,7 @@ export default function Home() {
                 <a href="https://aibgin.cz" target="_blank" rel="noopener noreferrer" className="footer-link">AIBgin platforma</a>
                 <a href="https://aiblab.cz" target="_blank" rel="noopener noreferrer" className="footer-link">aiblab.cz</a>
                 <a href="https://aibsn.org" target="_blank" rel="noopener noreferrer" className="footer-link">AIBSN Global Registry</a>
-                <a href="mailto:info@aiblab.info" className="footer-link" style={{ color: "#00e5ff" }}>Kontaktujte nás →</a>
+                <a href="mailto:info@aiblab.cz" className="footer-link" style={{ color: "#00e5ff" }}>Kontaktujte nás →</a>
               </div>
             </div>
             {/* Právní */}
