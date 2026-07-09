@@ -28,7 +28,7 @@ const jsonLdSchemas = [
       "url": "https://aiblab.cz",
       "logo": "https://aibaimy.cloud/images/logo.png",
       "identifier": "08694222",
-      "contactPoint": { "@type": "ContactPoint", "email": "info@aiblab.cz", "contactType": "customer support" },
+      "contactPoint": { "@type": "ContactPoint", "email": "info@aiblab.info", "contactType": "customer support" },
       "sameAs": ["https://aiblab.cz", "https://aibgin.cz", "https://aibsn.org"]
     }
   },

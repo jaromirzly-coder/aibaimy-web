@@ -200,7 +200,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
-            <a href="mailto:info@aiblab.cz" className="btn-primary hide-mob" style={{ padding: "10px 26px", fontSize: "0.78rem" }}>1 den zdarma</a>
+            <a href="mailto:info@aiblab.info" className="btn-primary hide-mob" style={{ padding: "10px 26px", fontSize: "0.78rem" }}>1 den zdarma</a>
             <button
               className="hamburger-btn"
               onClick={() => setMobileNav(!mobileNav)}
@@ -229,7 +229,7 @@ export default function Home() {
             {[["Ochrana", "#ochrana"], ["Jak to funguje", "#jak-to-funguje"], ["Ceník", "#cenik"], ["FAQ", "#faq"]].map(([l, h]) => (
               <a key={h} href={h} onClick={() => setMobileNav(false)} style={{ color: "rgba(255,255,255,0.85)", fontSize: "1.05rem", fontWeight: 700, textDecoration: "none", padding: "4px 0" }}>{l}</a>
             ))}
-            <a href="mailto:info@aiblab.cz" className="btn-primary" style={{ textAlign: "center", marginTop: 8 }} onClick={() => setMobileNav(false)}>
+            <a href="mailto:info@aiblab.info" className="btn-primary" style={{ textAlign: "center", marginTop: 8 }} onClick={() => setMobileNav(false)}>
               1 den zdarma
             </a>
           </div>
@@ -619,17 +619,17 @@ export default function Home() {
           )}
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap", marginBottom: 24 }}>
             <a
-              href="mailto:info@aiblab.cz"
+              href="mailto:info@aiblab.info"
               className="btn-primary"
               style={{ padding: "16px 48px", fontSize: "0.95rem" }}
             >
               Vyzkoušet zdarma 1 den
             </a>
-            <a href="mailto:info@aiblab.cz" className="btn-outline">Kontaktovat obchod</a>
+            <a href="mailto:info@aiblab.info" className="btn-outline">Kontaktovat obchod</a>
           </div>
           <p style={{ fontSize: "0.75rem", color: "rgba(255,255,255,0.28)" }}>
             Nebo napište na{" "}
-            <a href="mailto:info@aiblab.cz" style={{ color: "#00e5ff", textDecoration: "none" }}>info@aiblab.cz</a>
+            <a href="mailto:info@aiblab.info" style={{ color: "#00e5ff", textDecoration: "none" }}>info@aiblab.info</a>
             {" "}· Odpovíme do 24 hodin
           </p>
         </div>
@@ -731,7 +731,7 @@ export default function Home() {
                 <a href="https://aibgin.cz" target="_blank" rel="noopener noreferrer" className="footer-link">AIBgin platforma</a>
                 <a href="https://aiblab.cz" target="_blank" rel="noopener noreferrer" className="footer-link">aiblab.cz</a>
                 <a href="https://aibsn.org" target="_blank" rel="noopener noreferrer" className="footer-link">AIBSN Global Registry</a>
-                <a href="mailto:info@aiblab.cz" className="footer-link" style={{ color: "#00e5ff" }}>Kontaktujte nás →</a>
+                <a href="mailto:info@aiblab.info" className="footer-link" style={{ color: "#00e5ff" }}>Kontaktujte nás →</a>
               </div>
             </div>
             {/* Právní */}
@@ -744,6 +744,11 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <style>{`.hopea-band{box-sizing:border-box;width:100%;padding:22px 18px;background:#0f2e22;border-top:3px solid #3aa17a;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px 20px;text-align:center;font-family:inherit;}.hopea-text{color:#e8f3ee;font-size:15px;line-height:1.5;max-width:640px;margin:0;}.hopea-text strong{color:#7fe0b6;font-weight:700;}.hopea-btn{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;background:#3aa17a;color:#04150e;text-decoration:none;font-weight:700;font-size:15px;padding:11px 20px;border-radius:999px;}.hopea-btn:hover{background:#57c497;}`}</style>
+          <section className="hopea-band" aria-label="Podporujeme HOPEA">
+            <p className="hopea-text">🌿 Hrdě podporujeme <strong>HOPEA</strong> — ekologicko-duchovní iniciativu, která vrací vyhynulé a ohrožené druhy zpět do přírody a obnovuje přetržené vazby v ekosystému. Žádný druh by neměl zmizet kvůli nám.</p>
+            <a className="hopea-btn" href="https://hopea.online/" target="_blank" rel="noopener noreferrer">Podpořit HOPEA →</a>
+          </section>
           <div style={{ borderTop: "1px solid rgba(255,255,255,0.05)", paddingTop: 22, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 12 }}>
             <span style={{ fontSize: "0.73rem", color: "rgba(255,255,255,0.2)" }}>
               © 2026 SAY TO PAY s.r.o. · Patents Pending · EU AI Act Ready by Design

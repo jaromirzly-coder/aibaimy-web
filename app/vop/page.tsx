@@ -28,7 +28,7 @@ export default function VOP() {
 
           <h2>4. Zkušební období a předplatné</h2>
           <p>Poskytovatel nabízí bezplatné zkušební období v délce <strong>1 den</strong> od registrace. Kreditní karta je při registraci vyžadována. Po uplynutí zkušebního období přechází služba automaticky do placeného modelu ve výši <strong>199 Kč bez DPH za každý započatý kalendářní měsíc</strong>, pokud Uživatel nezruší předplatné před jeho uplynutím.</p>
-          <p>Předplatné se automaticky obnovuje každý měsíc, dokud jej Uživatel nezruší. Zrušení lze provést v nastavení účtu nebo e-mailem na info@aiblab.cz. Zrušení je účinné k poslednímu dni aktuálního fakturačního období.</p>
+          <p>Předplatné se automaticky obnovuje každý měsíc, dokud jej Uživatel nezruší. Zrušení lze provést v nastavení účtu nebo e-mailem na info@aiblab.info. Zrušení je účinné k poslednímu dni aktuálního fakturačního období.</p>
 
           <h2>5. Platební podmínky</h2>
           <p>Platby jsou zpracovávány prostřednictvím platební brány Stripe. Uživatel souhlasí s podmínkami platební brány. Faktura je vystavena elektronicky a zaslána e-mailem. Ceny jsou uváděny bez DPH; DPH bude účtována dle platných právních předpisů.</p>
@@ -46,7 +46,7 @@ export default function VOP() {
           <p>Smluvní vztah se řídí právem České republiky. Spory budou řešeny přednostně mimosoudně. Spotřebitelé mohou využít platformu pro online řešení sporů EU (ec.europa.eu/consumers/odr) nebo se obrátit na Českou obchodní inspekci (www.coi.cz).</p>
 
           <h2>10. Kontaktní údaje</h2>
-          <p>SAY TO PAY s.r.o. · E-mail: info@aiblab.cz · Web: aibaimy.cloud</p>
+          <p>SAY TO PAY s.r.o. · E-mail: info@aiblab.info · Web: aibaimy.cloud</p>
         </div>
       </main>
       <footer style={{ borderTop: "1px solid rgba(255,255,255,0.06)", padding: "24px 28px", textAlign: "center" }}>
