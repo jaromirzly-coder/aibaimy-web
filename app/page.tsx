@@ -677,7 +677,7 @@ export default function Home() {
           </div>
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
             <a
-              href="https://avatar.aiblab.info/call.html"
+              href="https://aib1line.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
